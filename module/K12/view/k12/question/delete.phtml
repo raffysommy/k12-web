@@ -1,0 +1,8 @@
+<section class="content">
+    <form action="<?php echo $this->url('question', array('action' => 'delete')) ?>" method="post">
+        <input type="hidden" name="id" value="<?php echo $this->id ?>">
+        <label>Sei sicuro di voler eliminare la domanda <?php echo $this->id ?> ?</label>
+        <input type="submit" name="confirm" value="y" class="btn btn-success">
+        <input type="submit" name="confirm" value="n" class="btn btn-danger">
+    </form>
+</section>
